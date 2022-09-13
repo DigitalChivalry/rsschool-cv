@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/****************************     RESET    **************************** /
+/*This reset adjusted by me. I inspired original reset from Elad Shechter on Oct 19, 2021*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead,
+tr, th, td, header, footer, section, aside,
+figure, figcaption, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+ */
+*:where(:not(iframe, canvas, img, svg, video, pre, code):not(svg *, symbol *)) {
+	all: unset;
+	display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+	cursor: revert;
+	text-decoration: none;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, li, menu {
+	list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+	max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+	border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+	white-space: revert;
+}
+
+/* Minimum style to allow to style meter element */
+{  -webkit-appearance: revert;
+	appearance: revert;
+}
+
+/* Reset default text opacity of input placeholder */
+::placeholder {
+	color: unset;
+}
+
+/* Fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+	display: none;
+}
+
+/* Revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly. */
+:where([contenteditable]) {
+	-moz-user-modify: read-write;
+	-webkit-user-modify: read-write;
+	overflow-wrap: break-word;
+	-webkit-line-break: after-white-space;
+}
+
+/* Apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+	-webkit-user-drag: element;
+}
+
+/*It's totally my adjustment*/
+input,button,textarea {
+	font-family:inherit;
+}
+
+/****************************     Page    ****************************/
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background: #F3E9DB;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+
+	min-height: 100vh;
+	width: 100%;
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.page__main-header {
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+
+/****************************     Dossier     ****************************/
+.dossier {
+	font-family: 'Special Elite', cursive;
+	line-height: 1.7;
+	font-size: 1.6rem;
+}
+
+.dossier {
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
+}
+
+
+/****************************     Basic     ****************************/
+.basic {}
+
+.basic__header {
+	font-size: 2.5rem;
+	padding-bottom: 5px;
+	position: relative;
+}
+
+.basic__grid-wrapper{
+	display: grid;
+	grid-template: [start] 'bio photo'auto [end];
+	justify-content: space-between;
+}
+
+.basic__photo-container{
+	grid-area: photo;
+	order: 1;
+	min-height: 100px;
+}
+
+.basic__photo {
+	height: 300px;
+	border-radius: 5px;
+	max-width: 100%;
+	filter: grayscale(100%);
+	animation: filterGrey 10s ease-out;
+	animation-fill-mode: forwards;
+}
+@keyframes filterGrey {
+	0% {
+		filter: grayscale(100%);
+	}
+	20%{
+		filter: grayscale(80%);
+	}
+	40%{
+		filter: grayscale(60%);
+	}
+	60%{
+		filter: grayscale(40%);
+	}
+	80%{
+		filter: grayscale(20%);
+	}
+	100% {
+		filter: grayscale(0%);
+	}
+}
+
+.basic__bio {
+	grid-area: bio;
+}
+
+.basic__item {
+	display: flex;
+	font-size: 1.6rem;
+	margin-bottom: 10px;
+}
+
+
+.basic__trait {
+	padding-right: 10px;
+}
+
+.basic__discretion {}
+
+/****************************     Contacts     ****************************/
+.contacts {}
+
+.contacts__email {
+	background: radial-gradient(transparent 50%, rgba(0, 0, 0, 0.5)) center / 200% 200% no-repeat;
+	transition: 0.5s ;
+}  .contacts__email:hover {
+		 cursor: pointer;
+		 background-size: 100% 100%;
+} .contacts__email:active {
+		 color: white;
+		 background: linear-gradient(180deg, rgba(69, 69, 78, 0.5) 0%, rgba(0, 0, 0, 0.8) 37%, rgba(58, 58, 59, 0.5) 100%);
+		 }
+
+.contacts__discretion {}
+
+
+/****************************     Competency     ****************************/
+.competency__table {
+	padding: 5px;
+	border: 1px solid #3f3e3e;
+
+}	.competency__table td {
+	vertical-align: middle;
+	border: 1px solid #333;
+	padding: 5px 5px;
+}
+
+.competency__table-thead {
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+}
+
+td:first-child {
+	text-align: center;
+}
+
+td:last-child {
+	padding-left: 10px;
+}
+
+
+ /****************************     Code-samples     ****************************/
+.code-samples {
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+}
+
+.code-samples__header {}
+
+.code-samples__item {}
+
+.code-samples__discretion {}
+
+.code-samples__instance{
+	text-align: center;
+	background: rgba(199, 199, 199, 0.7);
+}
+
+
+/****************************     Experience     ****************************/
+.experience {
+}
+
+.experience__header {
+}
+
+.experience__discretion {
+}
+
+
+/****************************     Education     ****************************/
+.education {}
+
+.education__header {}
+
+.education__discretion {}
+
+
+/****************************     Languages     ****************************/
+.languages {}
+
+.languages__header {}
+
+.languages__discretion {}
+
+
+/****************************     Footer     ****************************/
+.footnote {
+	display: block;
+}
+
+.footnote__description {
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+/****************************     Modifiers     ****************************/
+.--code-ff {
+	font-family: 'Fira Code', monospace;
+}
+
+.--section-header {
+	font-size: 2.5rem;
+	position: relative;
+}  .--section-header:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		border: 2px solid #3f3e3e;
+	}
+
+
+
+
+/****************************     Media     ****************************/
+/*@media only screen and (max-width: 120em) {*/
+/*	body {*/
+/*		background: white;*/
+/*	}*/
+
+/*}*/
+/*@media only screen and (max-width: 57.6em) {*/
+
+/*}*/
