@@ -196,7 +196,6 @@ body {
 	margin-bottom: 10px;
 }
 
-
 .basic__trait {
 	padding-right: 10px;
 }
@@ -224,6 +223,7 @@ body {
 .competency__table {
 	padding: 5px;
 	border: 1px solid #3f3e3e;
+	font-size: clamp(10px, 2vw, 16px)
 
 }	.competency__table td {
 	vertical-align: middle;
@@ -318,15 +318,29 @@ td:last-child {
 	}
 
 
-
-
 /****************************     Media     ****************************/
-/*@media only screen and (max-width: 120em) {*/
-/*	body {*/
-/*		background: white;*/
-/*	}*/
+@media only screen and (max-width: 1200px) {
+	.page {
+		padding: 0 5px;
+	}
 
-/*}*/
-/*@media only screen and (max-width: 57.6em) {*/
+	.code-samples__instance {
+		text-align: left;
+	}
+}
 
-/*}*/
+@media only screen and (max-width: 1090px) {
+	.code-samples {
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 992px) {
+	.basic__grid-wrapper{
+		grid-template: [start] 'photo photo' 'bio bio' auto [end];
+	}
+
+	.basic__photo-container{
+		justify-self: center;
+	}
+}
