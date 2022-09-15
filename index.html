@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>cv-html</title>
+	<link rel="shortcut icon" href="image/rs_logo.png">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="page">
+		<h1 class="page__main-header">- 32 -</h1>
+		<main class="dossier">
+			<section class="basic">
+				<h3 class="basic__header --section-header"> Basic.</h3>
+				<div class="basic__grid-wrapper">
+					<div class="basic__photo-container">
+						<img class="basic__photo" src="image/photo.jpg" alt="It's me)">
+					</div>
+					<div class="basic__bio">
+						<div class="basic__item --short">
+							<p class="basic__trait">Name:</p>
+							<p class="basic__discretion">Muhlis</p>
+						</div>
+						<div class="basic__item --short">
+							<p class="basic__trait">Surname:</p>
+							<p class="basic__discretion">Gasanov</p>
+						</div>
+						<div class="basic__item --short">
+							<p class="basic__trait">Gender:</p>
+							<p class="basic__discretion">MALE</p>
+						</div>
+						<div class="basic__item">
+							<p class="basic__trait">Description:</p>
+							<p class="basic__discretion">Born 01-14-1990; 6′1″ (186cm), brown eyes, black-grey hair, 207lbs (94kg)</p>
+						</div>
+						<div class="basic__item">
+							<p class="basic__trait">Family background:</p>
+							<p class="basic__discretion">Married to a beautiful woman who cooks the best cakes in the world</p>
+						</div>
+						<div class="basic__item">
+							<p class="basic__trait">Localities frequented:</p>
+							<p class="basic__discretion">Ukraine. Turkey. Belarus.</p>
+						</div>
+						<div class="basic__item">
+							<p class="basic__trait">Criminal associates:</p>
+							<p class="basic__discretion">JS, HTML, CSS</p>
+						</div>
+						<div class="basic__item">
+							<p class="basic__trait">Modus operandi:</p>
+							<p class="basic__discretion">Meticulously. Clearly. Maturely.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contacts">
+				<h3 class="contacts__header --section-header">Contacts.</h3>
+				<p class="contacts__discretion">
+					e-mail:
+					<a class="contacts__email" href="mailto:ulvi.epimetheus@gmail.com">ulvi.epimetheus@gmail.com</a>
+				</p>
+				<p class="contacts__discretion">
+					Discord(rs-school): Mezamorta(@DigitalChivalry)
+				</p>
+			</section>
+			<section class="competency">
+				<h3 class="competency__header --section-header">Competency.</h3>
+				<table class="competency__table">
+					<thead class="competency__table-thead">
+					<tr>
+						<td>Skills</td>
+						<td>Level</td>
+						<td>Examples</td>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>Markdown</td>
+						<td>Can create tables</td>
+						<td>Front of you</td>
+					</tr>
+					<tr>
+						<td>CSS</td>
+						<td>Can use splendid text-decorations</td>
+						<td>Charming text 🌼</td>
+					</tr>
+					<tr>
+						<td>JS</td>
+						<td>Writes an explosive code</td>
+						<td class="--code-ff">redButton.addEventListener('click', (nuclearLaunch) => alert('May the Lord preserve us...'))</td>
+					</tr>
+					<tr>
+						<td>HTML</td>
+						<td>It’s quite enough to count on a good offer</td>
+						<td class="--code-ff">&lt;small&gt;My chances&lt;/small&gt;</td>
+					</tr>
+					</tbody>
+				</table>
+			</section>
+			<section class="code-samples">
+				<h3 class="code-samples__header --section-header">Free code samples.</h3>
+				<div class="code-samples__item">
+					<p class="code-samples__discretion">If you’re === Aquarius♒ don’t call him. You’re incompatible.</p>
+					<pre class="code-samples__instance --code-ff"><code>function defineZodiacs(month, date) {
+			let birthday = [addZeroTime(month), addZeroTime(date)].join(&rsquo;-&rsquo;);
+
+	if&nbsp;(birthday &lt;= &rsquo;12-22&prime; &amp;&amp;&nbsp;birthday &lt;= &rsquo;01-19&prime;) {
+			return &rsquo;You are Capricorn&rsquo;
+		} else&nbsp;if (birthday &gt;= &rsquo;01-20&prime; &amp;&amp;&nbsp;birthday &lt;= &rsquo;02-18&prime;) {
+			return &rsquo;You are Aquarius&rsquo;
+		} else&nbsp;if (birthday &gt;= &rsquo;02-19&prime; &amp;&amp;&nbsp;birthday &lt;= &rsquo;03-20&prime;) {
+			return &rsquo;You are Pisces&rsquo;
+		} else&nbsp;if (birthday &gt;= &rsquo;03-21&prime; &amp;&amp;&nbsp;birthday &lt;= &rsquo;04-19&prime;) {
+			return &rsquo;You are Aries&rsquo;
+		} else&nbsp;if (birthday &gt;= &rsquo;04-20&prime; &amp;&amp;&nbsp;birthday &lt;= &rsquo;5-20&prime;) {
+			return &rsquo;You are Taurus&rsquo;
+		} else&nbsp;if (birthday &gt;= &rsquo;05-21&prime; &amp;&amp;&nbsp;birthday &lt;= &rsquo;06-20&prime;) {
+			return &rsquo;You are Gemini&rsquo;
+		} else&nbsp;if (birthday &gt;= &rsquo;06-21&prime; &amp;&amp;&nbsp;birthday &lt;= &rsquo;07-22&prime;) {
+			return &rsquo;You are Cancer&rsquo;
+		} else&nbsp;if (birthday &gt;= &rsquo;07-23&prime; &amp;&amp;&nbsp;birthday &lt;= &rsquo;08-22&prime;) {
+			return &rsquo;You are Leo&rsquo;
+		} else&nbsp;if (birthday &gt;= &rsquo;08-23&prime; &amp;&amp;&nbsp;birthday &lt;= &rsquo;09-22&prime;) {
+			return &rsquo;You are Virgo&rsquo;
+		} else&nbsp;if (birthday &gt;= &rsquo;09-22&prime; &amp;&amp;&nbsp;birthday &lt;= &rsquo;10-22&prime;) {
+			return &rsquo;You are Libra&rsquo;
+		} else&nbsp;if (birthday &gt;= &rsquo;10-23&prime; &amp;&amp;&nbsp;birthday &lt;= &rsquo;11-21&prime;) {
+			return &rsquo;You are Scorpio&rsquo;
+		} else&nbsp;if (birthday &gt;= &rsquo;11-22&prime; &amp;&amp;&nbsp;birthday &lt;= &rsquo;12-21&prime;) {
+			return &rsquo;You are Sagittarius&rsquo;
+		} else {
+			return &rsquo;You input date in&nbsp;a&nbsp;wrong format&rsquo;
+		}
+	}</code></pre>
+				</div>
+				<div class="code-samples__item">
+					<p class="code-samples__discretion">Please, share your thoughts💭:</p>
+					<pre class="code-samples__instance --code-ff"><code>const userThoughts = prompt('Say something clever');
+
+	if (userThoughts === 'something stupid') {
+		alert('That's possibly the most disgusting and humiliating thing I ever heard.')
+		}
+		if (userThoughts === 'smart stuff') {alert("Not bad. At least you're more intelligent than my nasty neighbour")
+	}
+									</code>
+								</pre>
+				</div>
+
+				<div class="code-samples__item">
+					<p class="code-samples__discretion">Do you like me🤗?:</p>
+					<pre class="code-samples__instance --code-ff"><code>const question = () =&gt; {
+			let userOpinion = confirm(&rsquo;Do you like me?&rsquo;)
+
+			!userOpinion ? question() : alert(&rsquo;I also like you&rsquo;)
+	}
+	question()</code></pre>
+				</div>
+			</section>
+			<section class="experience">
+				<h3 class="experience__header --section-header">Experience.</h3>
+				<p class="experience__discretion">
+					I wasted more than three hours to create this fancy CV to make you smile. My noble signor, is that not enough for you?
+				</p>
+			</section>
+			<section class="education">
+				<h3 class="education__header --section-header">Education.</h3>
+				<p class="education__discretion">
+					<q>I saved myself — self-analysis, self-discipline, self-education, self-improvement.</q>
+					Eugène Ionesco.
+				</p>
+			</section>
+			<section class="languages">
+				<h3 class="languages__header --section-header">Languages.</h3>
+				<p class="languages__discretion">
+					English level: I’m certainly not Charles Dickens. However, I can bind a few words. The best reference will be… Perhaps you watched “the Mighty Boosh” show and remember
+					“an alabaster retard” - the Moon🌚, that’s my English level.
+				</p>
+			</section>
+		</main>
+		<footer class="footnote">
+			<p class="footnote__description">Property of RS SCHOOL - For official Use Only
+				may not disseminate of contents disclosed
+				without permission of ME
+			</p>
+		</footer>
+	</div>
+</body>
+</html>
