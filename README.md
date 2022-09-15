@@ -1,1 +1,1 @@
-https://DigitalChivalry.github.io/rsschool-cv/cv
+https://DigitalChivalry.github.io/rsschool-cv/
